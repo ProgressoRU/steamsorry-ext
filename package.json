@@ -1,0 +1,12 @@
+{
+  "name": "steamsorry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SteamSorry — Chrome and Firefox (MV3) extension that restores visibility of games hidden from Russian users.",
+  "scripts": {
+    "build": "bun run build.mjs --mode prod"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  }
+}

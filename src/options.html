@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ой, извините! - Настройки</title>
+<style>
+  body { background: #fff; font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; margin: 24px; max-width: 640px; color: #1b2838; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  .row { margin: 14px 0; }
+  label { display: block; font-weight: 600; margin-bottom: 4px; }
+  select, input[type="checkbox"] { font-size: 14px; }
+  select { padding: 4px 6px; }
+  .hint { color: #586471; font-size: 12px; margin-top: 4px; }
+  .save { margin-top: 16px; color: #2e7d32; font-size: 13px; min-height: 18px; }
+  hr { border: none; border-top: 1px solid #d6dbe1; margin: 18px 0; }
+</style>
+</head>
+<body>
+<h1>Ой, извините!</h1>
+
+<div class="row">
+  <label for="cc">Регион для просмотра заблокированных страниц</label>
+  <select id="cc">
+    <option value="us">США (US)</option>
+    <option value="kz">Казахстан (KZ)</option>
+    <option value="ua">Украина (UA)</option>
+    <option value="tr">Турция (TR)</option>
+    <option value="gb">Великобритания (GB)</option>
+    <option value="de">Германия (DE)</option>
+    <option value="pl">Польша (PL)</option>
+    <option value="in">Индия (IN)</option>
+    <option value="cn">Китай (CN)</option>
+  </select>
+  <div class="hint">На страницах заблокированных игр и в поиске вы будете видеть цены в валюте этого региона.</div>
+</div>
+
+<div class="row">
+  <label><input type="checkbox" id="searchRewrite"> Показывать заблокированные игры в поиске</label>
+  <div class="hint">Поиск будет идти через выбранный регион, но в результатах поиска вы также будете видеть цены в валюте этого региона, а не рублях.</div>
+</div>
+
+<hr>
+<div class="save" id="status"></div>
+
+<script src="options.js"></script>
+</body>
+</html>
